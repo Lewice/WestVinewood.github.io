@@ -305,7 +305,7 @@
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="25000"> Advanced Repair Kit - $25000
+      <input type="checkbox" class="menu-item" data-price="20000"> Advanced Repair Kit - $20000
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
