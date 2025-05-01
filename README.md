@@ -149,6 +149,15 @@
           alert('Employee Name is required!');
           return;
         }
+        const localTime = new Date().toLocaleString('en-US', {
+          year: 'numeric',
+          month: 'numeric',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+        }) || 'Unknown Time';
         const discordData = {
           username: 'West Vinewood Clock',
           content: `${employeeName} has clocked in`,
@@ -157,7 +166,7 @@
             fields: [
               { name: 'Employee Name', value: employeeName, inline: true },
               { name: 'Action', value: 'Clocked In', inline: true },
-              { name: 'Time', value: new Date().toLocaleString(), inline: true }
+              { name: 'Local Time', value: localTime, inline: true }
             ],
             color: 0x00ff00
           }]
@@ -168,7 +177,7 @@
           contentType: 'application/json',
           data: JSON.stringify(discordData),
           success: function () {
-            alert(`${employeeName} successfully clocked in!`);
+            alert(`${employeeName} successfully clocked in at ${localTime}!`);
           },
           error: function () {
             alert('Error clocking in. Please try again.');
@@ -183,6 +192,15 @@
           alert('Employee Name is required!');
           return;
         }
+        const localTime = new Date().toLocaleString('en-US', {
+          year: 'numeric',
+          month: 'numeric',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true
+        }) || 'Unknown Time';
         const discordData = {
           username: 'West Vinewood Clock',
           content: `${employeeName} has clocked out`,
@@ -191,7 +209,7 @@
             fields: [
               { name: 'Employee Name', value: employeeName, inline: true },
               { name: 'Action', value: 'Clocked Out', inline: true },
-              { name: 'Time', value: new Date().toLocaleString(), inline: true }
+              { name: 'Local Time', value: localTime, inline: true }
             ],
             color: 0xff0000
           }]
@@ -202,7 +220,7 @@
           contentType: 'application/json',
           data: JSON.stringify(discordData),
           success: function () {
-            alert(`${employeeName} successfully clocked out!`);
+            alert(`${employeeName} successfully clocked out at ${localTime}!`);
           },
           error: function () {
             alert('Error clocking out. Please try again.');
