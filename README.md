@@ -172,7 +172,7 @@
           }]
         };
         $.ajax({
-          url: 'https://discord.com/api/webhooks/1367604344328945774/l8l244q3kzLVJU0TFSrsrOgUWuF1M-7hOXHzRjaQEvqPo65Z1KXifw9_qXuDQevCqCU2',
+          url: 'https://discord.com/api/webhooks/1367613053595680789/hWY73Kx4o1vGPnmLEDLQlxklg8n3rVn-vgvXFtOR9L_QWSReewt975fif26NgWijLIW-',
           type: 'post',
           contentType: 'application/json',
           data: JSON.stringify(discordData),
@@ -215,7 +215,7 @@
           }]
         };
         $.ajax({
-          url: 'https://discord.com/api/webhooks/1367604344328945774/l8l244q3kzLVJU0TFSrsrOgUWuF1M-7hOXHzRjaQEvqPo65Z1KXifw9_qXuDQevCqCU2',
+          url: 'https://discord.com/api/webhooks/1367613053595680789/hWY73Kx4o1vGPnmLEDLQlxklg8n3rVn-vgvXFtOR9L_QWSReewt975fif26NgWijLIW-',
           type: 'post',
           contentType: 'application/json',
           data: JSON.stringify(discordData),
