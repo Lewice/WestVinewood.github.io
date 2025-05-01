@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <style>
     body, h2, h3, form, label, p, button, select, input {
-      font-size: 8px;
+      font-size: 16px; /* Increased from 8px */
       margin-right: 10px;
     }
     label {
@@ -179,7 +179,7 @@
         };
         console.log('Sending clock-in webhook:', JSON.stringify(discordData));
         $.ajax({
-          url: 'https://discord.com/api/webhooks/1367613053595680789/hWY73Kx4o1vGPnmLEDLQlxklg8n3rVn-vgvXFtOR9L_QWSReewt975fif26NgWijLIW-',
+          url: 'https://discord.com/api/webhooks/1367625365052329994/RLQd5IKAJ3uP71dhX_LRMTjRo8KmdpCrxGKK9Pax-MfOo-F8cvttajGKF8jOXaNFNwA_',
           method: 'POST',
           contentType: 'application/json',
           data: JSON.stringify(discordData),
@@ -219,7 +219,7 @@
         };
         console.log('Sending clock-out webhook:', JSON.stringify(discordData));
         $.ajax({
-          url: 'https://discord.com/api/webhooks/1367613053595680789/hWY73Kx4o1vGPnmLEDLQlxklg8n3rVn-vgvXFtOR9L_QWSReewt975fif26NgWijLIW-',
+          url: 'https://discord.com/api/webhooks/1367625365052329994/RLQd5IKAJ3uP71dhX_LRMTjRo8KmdpCrxGKK9Pax-MfOo-F8cvttajGKF8jOXaNFNwA_',
           method: 'POST',
           contentType: 'application/json',
           data: JSON.stringify(discordData),
@@ -355,7 +355,7 @@
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
-      <input type="checkbox" class="menu-item" data-price="20000"> Advanced Repair Kit - $20000
+      <input type="checkbox" class="menu-item" data-price="25000"> Advanced Repair Kit - $25000
       <input type="number" class="quantity" value="1" min="1">
     </label>
     <label>
