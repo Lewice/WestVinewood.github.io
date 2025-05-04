@@ -29,7 +29,7 @@
       font-weight: bold;
     }
     body {
-      background-color: darkyellow;
+      background-color: yellow;
     }
     .button-group {
       display: flex;
