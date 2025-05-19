@@ -366,8 +366,8 @@
     <label for="discount">Select Discount:</label>
     <select id="discount">
       <option value="0">No Discount</option>
-      <option value="50">50% Discount (Employee Discount)</option>
-      <option value="25">25% Discount (PD & EMS)</option>
+      <option value="25">25% Discount (Employee Discount)</option>
+      <option value="15">15% Discount (PD & EMS)</option>
     </select>
     <div style="margin-bottom: 30px;"></div>
     <label for="employeeName">Employee Name:</label>
